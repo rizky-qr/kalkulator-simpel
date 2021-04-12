@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas DOM</title>
+</head>
+
+<body>
+    <h3>Nama : Muhamad Rizky</h3>
+    <h3>Nim : 19.01.4433</h3>
+    <hr>
+    <h1>Form perhitungan matematika</h1>
+
+    <hr />
+    Pilih Perhitungan :
+    <select name="opsiPerhitungan" id="opsiPerhitungan">
+        <option value="Luas Bola">Luas Bola</option>
+        <option value="Volume Bola">Volume Bola</option>
+        <option value="Luas Tabung">Luas Permukaan Tabung</option>
+        <option value="Volume Tabung">Volume Tabung</option>
+    </select>
+    <br /><br />
+    Jari-jari (r) = <input type="text" name="jari" id="jari" value="0">
+    <br /><br />
+    Tinggi (t) = <input type="text" name="tinggi" id="tinggi" value="0">
+    <br /><br />
+    <button id="submitBtn">Hitung</button>
+    <hr />
+    <div id="hasilHitung">
+        <span id="judul_hitung">Luas Bola</span> = <span id="hasil_perhitungan">0</span>
+    </div>
+    <hr />
+    <p>
+        Rumus Luas Bola : 4 . π . r²
+    </p>
+    <p>
+        Rumus Volume Bola : 4/3 . π . r³
+    </p>
+    <p>
+        Rumus Luas Permukaan Tabung : 2 . π . r . ( t + r )
+    </p>
+    <p>
+        Rumus Luas Tabung : π . r² . t
+    </p>
+    <p>
+        π = 3,14
+    </p>
+    <hr />
+
+
+    <!-- <script type="text/javascript" src="../jquery.3.1.js"></script> -->
+    <script type="text/javascript" src="tugas.js"></script>
+    <!-- <script>
+        document.getElementById("formBtn").
+            addEventListener("click", hitung_luas_bola);
+        addEventListener("click", hitung_volume_bola);
+        addEventListener("click", hitung_luas_permukaan_tabung);
+        addEventListener("click", hitung_luas_tabung);
+
+
+        function hitung_luas_bola() {
+            jari = document.getElementById('jari').value;
+            tinggi = document.getElementById('tinggi').value;
+            var permukaanBola = (4 * 3.14 * (parseInt(jari) * parseInt(jari)));
+            document.getElementById("luasBola").innerHTML = permukaanBola;
+        }
+
+        function hitung_volume_bola() {
+            var kubikBola = (4 / 3 * 3.14 * (parseInt(jari) * parseInt(jari) * parseInt(jari)));
+            document.getElementById("volumeBola").innerHTML = kubikBola;
+        }
+
+        function hitung_luas_permukaan_tabung() {
+            var luasPermukaanTabung = (2 * 3.14 * (parseInt(jari) * (parseInt(jari) + parseInt(tinggi))));
+            document.getElementById("permukaanTabung").innerHTML = luasPermukaanTabung;
+        }
+
+        function hitung_luas_tabung() {
+            var luasTabung1 = (3.14 * (parseInt(jari) * parseInt(jari) * parseInt(tinggi)));
+            document.getElementById("luasTabung").innerHTML = luasTabung1;
+        }
+    </script> -->
+
+</body>
+
+</html>
